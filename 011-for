@@ -1,0 +1,19 @@
+texto = ' Curso Python'
+novo_texto = ''
+# cont = 0
+# while cont < len(texto):
+#     print(texto[cont], end=' ')
+#     cont += 1
+
+# for letra in texto:
+#     print(letra, end=' ')
+
+for letra in texto:
+    if letra == 't':
+        novo_texto += letra.upper()
+    elif letra == 'h':
+        novo_texto += letra.upper()
+    else:
+        novo_texto += letra
+print(novo_texto)
+
