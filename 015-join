@@ -1,0 +1,8 @@
+#join
+frase = 'Eu sei programar em Python'
+lista = frase.split(' ')
+frase2 = '-'.join(lista)
+
+print(frase)
+print(lista)
+print(frase2)
