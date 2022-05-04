@@ -1,0 +1,8 @@
+def soma(a, b):
+    s = a + b
+    print(s)
+
+
+soma(2, 4)
+soma(23, 54)
+soma(23, 1)
