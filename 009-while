@@ -1,0 +1,22 @@
+while True:
+    n1 = input('Digite um numero: ')
+    n2 = input('Digite outro numero: ')
+
+    if not n1.isnumeric() or not n2.isnumeric():
+        print('Erro. Por favor digite um numero.')
+        continue
+    ope = input('Digite um dos operadores (+ - / *): ')
+    n1 = int(n1)
+    n2 = int(n2)
+
+    if ope == '+':
+        cal = n1 + n2
+    elif ope == '-':
+        cal = n1 - n2
+    elif ope == '/':
+        cal = n1 / n2
+    else:
+        cal = n1 * n2
+    break
+print(f'{n1} {ope} {n2} = {cal}')
+print('Programa encerrado.')
