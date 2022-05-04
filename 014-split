@@ -1,0 +1,7 @@
+#split
+frase = 'Eu quero trabalhar com desenvolvimento e morar em Portugal'
+l1 = frase.split(' ')
+l2 = frase.split('a')
+print(l1)
+print(l2)
+
