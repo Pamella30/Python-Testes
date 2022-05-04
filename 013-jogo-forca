@@ -1,0 +1,38 @@
+secreto = 'BRASIL'
+digitadas = []
+chances = 3
+
+while True:
+    if chances <= 0:
+        print('Voce perdeu!')
+        break
+    print('=-' * 30)
+    letra = input('Digite uma letra: ').upper()
+    if len(letra) > 1:
+        print('Isso nao vale, digite apenas uma letra.')
+        continue
+    digitadas.append(letra)
+
+    if letra in secreto:
+        print(f'UHULL, a letra {letra} existe na palavra secreta.')
+    else:
+        print(f'Que pena a letra {letra} nao existe na palavra secreta.')
+        digitadas.pop()
+
+    temp = ''
+    for letra_secreta in secreto:
+        if letra_secreta in digitadas:
+            temp += letra_secreta
+        else:
+            temp += '*'
+
+    if temp == secreto:
+        print(f'PARABENS, voce acertou a palavra {temp}.')
+        break
+    else:
+        print(f'Formando a palavra -> {temp}')
+
+    if letra not in secreto:
+        chances -= 1
+        print(f'Voce tem {chances} chances.')
+        print()
