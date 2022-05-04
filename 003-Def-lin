@@ -1,0 +1,12 @@
+def lin():
+    print('=' * 30)
+
+
+nome = 'Pamella'
+sobrenome = 'Oliveira'
+ultimo_nome = 'da Cruz'
+lin()
+print(f'{nome:<30}')
+print(f'{sobrenome:^30}')
+print(f'{ultimo_nome:>30}')
+lin()
