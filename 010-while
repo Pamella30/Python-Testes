@@ -1,0 +1,17 @@
+frase = 'linguagem de programacao python'
+tam = len(frase)
+print(tam)
+cont = 0
+nova_frase = ''
+
+mod = input('Qual letra voce quer ver maiuscula? ')
+
+while cont < tam:
+    letra = frase[cont]
+    if letra == mod:
+        nova_frase += mod.upper()
+    else:
+        nova_frase += letra
+    cont += 1
+
+print(nova_frase)
