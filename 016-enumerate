@@ -1,0 +1,3 @@
+lista = ['Pamella', 'Oliveira', 'da Cruz']
+for valor in enumerate(lista):
+    print(valor)
