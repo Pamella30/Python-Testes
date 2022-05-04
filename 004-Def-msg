@@ -1,0 +1,10 @@
+def mensagem(msg):
+    print('=' * 30)
+    print(msg)
+    print('=' * 30)
+
+
+nome = str(input('Nome: '))
+mensagem(f'{nome:^30}')
+mensagem(f'{nome:<30}')
+
