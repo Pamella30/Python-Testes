@@ -1,0 +1,18 @@
+def somar(a = 0, b = 0, c = 0):
+    """
+    Faz a soma de tres valores e mostra o resultado na tela
+    :param a: primeiro valor
+    :param b: segundo valor
+    :param c: terceiro valor
+    """
+    s = a + b + c
+    print(f'A soma dos valores e igual a {s}')
+
+
+somar(3, 5, 6)
+somar(2, 1)
+somar()
+somar(b=9, c= 32)
+somar(c=43, a=21)
+
+
