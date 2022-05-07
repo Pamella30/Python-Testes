@@ -1,4 +1,4 @@
-# Python-Testes---Basico
+# Python - Testes Basico
 Testes feitos durante as aulas.
 
 # Fontes de estudo:
