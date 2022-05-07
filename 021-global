@@ -1,0 +1,12 @@
+def funcao(b):
+    global a
+    a = 30
+    b += 18
+    c = 10
+    print(f'Valores de dentro: {a, b, c}')
+
+
+a = 9
+funcao(a)
+print(f'Valores de fora: {a}')
+
