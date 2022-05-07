@@ -1,0 +1,12 @@
+a = 0
+b = None
+c = ()
+d = []
+e = 'Pamella'
+f = 32
+
+variavel = a or b or c or d or e or f
+print(variavel)
+
+variavel2 = a or f
+print(variavel2)
