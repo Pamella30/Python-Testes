@@ -1,0 +1,4 @@
+login = True
+msg = 'Usuario logado' if login == True else 'Logar'
+
+print(msg)
