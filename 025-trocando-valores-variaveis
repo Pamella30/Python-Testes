@@ -1,0 +1,7 @@
+nome = 'Pamella'
+ultimo_nome = 'Cruz'
+
+nome, ultimo_nome = ultimo_nome, nome
+
+print(f'Nome: {nome}\nUltimo nome: {ultimo_nome}')
+
