@@ -1,0 +1,6 @@
+lista = ['Pamella', 'Oliveira', 'da', 'Cruz']
+n1, *outralista, n2 = lista
+print(n1, n2)
+print(outralista)
+print(lista)
+print(n1, n2, outralista)
