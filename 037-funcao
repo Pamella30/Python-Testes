@@ -1,0 +1,6 @@
+def nome(nome = 'Nome', sobrenome = 'nao informado'):
+    print(nome, sobrenome)
+
+
+nome('Pamella', 'Oliveira da Cruz')
+nome()
