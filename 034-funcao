@@ -1,0 +1,10 @@
+def funcao():
+    print('Python na funcao')
+
+
+funcao()
+funcao()
+funcao()
+print('Python')
+print('Python')
+print('Python')
