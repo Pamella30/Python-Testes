@@ -1,0 +1,8 @@
+def saudacao(msg='Ola', nome='Usuario'):
+    print(msg, nome)
+
+
+saudacao(nome='Ana')
+saudacao('Oi', 'Ana')
+saudacao(msg='Oi')
+
