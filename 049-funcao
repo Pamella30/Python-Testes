@@ -1,0 +1,12 @@
+def func():
+    msg = 'Pamella'
+    return msg
+
+
+def func2(arg):
+    print(arg)
+
+
+mensagem = func()
+func2(mensagem)
+
