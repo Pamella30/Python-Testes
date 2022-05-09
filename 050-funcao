@@ -1,0 +1,13 @@
+def func1():
+    msg = 'Estudando funcao'
+    return msg
+
+
+def func2(var):
+    print(var)
+
+
+var = func1()
+func2(var)
+
+
