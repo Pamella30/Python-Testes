@@ -1,0 +1,9 @@
+def saudacao(msg='Oi', nome='usuario'):
+    nome = nome.upper()
+    return f'{msg}, {nome}'
+
+
+variavel = saudacao()
+print(variavel)
+
+
