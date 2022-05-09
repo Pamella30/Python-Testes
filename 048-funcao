@@ -1,0 +1,14 @@
+var_global = 'Variavel global'
+
+
+def func():
+    print(var_global)
+
+
+def func2():
+    var_global = 'Agora passou a ser uma variavel local'
+    print(var_global)
+
+
+func()
+func2()
