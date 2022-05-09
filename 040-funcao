@@ -1,0 +1,11 @@
+def div(n1, n2):
+    if n2 > 0:
+        return n1 / n2
+
+
+divide = div(8,4)
+if divide:
+    print(divide)
+else:
+    print('Conta invalida')
+
