@@ -1,0 +1,16 @@
+def mestre(funcao, *args, **kwargs):
+    return funcao(*args, **kwargs)
+
+def usuario(nome):
+    return f'Oi {nome}'
+
+
+def saudacao(nome, msg, msg2):
+    return f'{msg} {nome} {msg2}'
+
+
+executar1 = mestre(usuario, 'Pamella')
+executar2 = mestre(saudacao, 'Pamella!', 'Bom dia', 'Tenha uma boa estadia!')
+print(executar1)
+print(executar2)
+
