@@ -1,0 +1,6 @@
+def porcentagem(n1=0, n2=0):
+    porcento = n1 + (n1 * (n2/100))
+    return porcento
+
+
+print(porcentagem(200, 50))
