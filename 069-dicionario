@@ -1,0 +1,8 @@
+d1 = {
+    1: 'Pamella',
+    2: 'Oliveira da Cruz',
+    3: 'Nome e sobrenome'
+}
+
+d1.pop(3)
+print(d1)
