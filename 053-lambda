@@ -1,0 +1,11 @@
+lista = [
+    ['P1', 12],
+    ['P2', 2],
+    ['P3', 25],
+    ['P4', 10],
+    ['P5', 300],
+]
+
+lista.sort(key=lambda item: item[1], reverse=True)
+print(lista)
+
