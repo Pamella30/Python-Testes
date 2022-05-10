@@ -1,0 +1,11 @@
+d1 = {
+    'str': 'chave 1',
+    123: 'chave 2',
+    ('tupla'): 'chave 3',
+}
+
+print('str' in d1)
+print('chave 2' in d1.values())
+
+
+
