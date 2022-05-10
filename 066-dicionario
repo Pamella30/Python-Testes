@@ -1,0 +1,13 @@
+clientes = {
+    'C1': {
+        'nome': 'Pamella',
+        'Sobrenome': 'Oliveira da Cruz',
+    },
+    'C2': {
+        'nome': 'Ana Claudia',
+        'Sobrenome': 'Viterale'
+    }
+}
+
+for k, v in clientes.items():
+    print(f'Exibindo {k}')
