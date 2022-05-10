@@ -1,0 +1,14 @@
+d1 = {
+    'str': 'chave 1',
+    123: 'chave 2',
+    ('tupla'): 'chave 3',
+}
+
+
+d1['chave adicional'] = 'chave4'
+
+if d1.get('quinta_chave') is not None:
+    print(d1)
+else:
+    print('Chave nao existe')
+
