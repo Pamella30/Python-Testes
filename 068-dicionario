@@ -1,0 +1,10 @@
+import copy
+
+nomes = {'n1': 'Pamella', 'n2': 'Ana', 'n3': 'Marlene'}
+cliente = copy.deepcopy(nomes)
+
+cliente['n1'] = 'Oliveira da Cruz'
+cliente['n3'] = 'Bia'
+
+print(nomes)
+print(cliente)
