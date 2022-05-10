@@ -1,0 +1,3 @@
+d1 = dict(Alimentos ='Arroz')
+d1['Limpeza'] = 'Candida'
+print(d1['Alimentos'])
