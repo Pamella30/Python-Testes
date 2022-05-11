@@ -1,0 +1,13 @@
+l1 = '012345678901234567890123456789'
+n = 10
+contadores = [i for i in range(0, len(l1), n)]
+tuplas = [(i, i + n) for i in range(0, len(l1), n)]
+lista = [l1[i: i + n] for i in range(0, len(l1), n)]
+retorno = '.'.join(lista)
+
+
+print(contadores)
+print(tuplas)
+print(lista)
+print(retorno)
+
