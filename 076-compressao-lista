@@ -1,0 +1,27 @@
+l1 = [1, 2, 3, 4, 5]
+ex1 = [valor for valor in l1]
+ex2 = [v * 2 for v in l1]
+ex3 = [(v1, v2) for v1 in l1 for v2 in range(3)]
+
+l2 = ['Pamella', 'Oliveira da Cruz']
+ex4 = [v.replace('a', '@').upper() for v in l2]
+
+tupla = (
+    ('Pamella', 'Oliveira da Cruz'),
+    ('Ana Claudia', 'Viterale')
+)
+ex5 = [(x, y) for x, y in tupla]
+ex6 = dict(ex5)
+
+l3 = list(range(10))
+ex7 = [v for v in l3 if v % 2 == 0]
+ex8 = [v if v % 2 == 0 else '-' for v in l3]
+
+print(ex1)
+print(ex2)
+print(ex3)
+print(ex4)
+print(ex5)
+print(ex6)
+print(ex7)
+print(ex8)
