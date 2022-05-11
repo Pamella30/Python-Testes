@@ -1,0 +1,17 @@
+lista = [
+    (2, 3),
+    (4, 5),
+]
+
+d1 = {x: y*3 for x, y in lista}
+d2 = {x: y for x, y in lista}
+
+lista2 = [
+    ('Pamella', 'Ana Clauda'),
+    ('Oliveira', 'Viterale'),
+]
+d3 = {x.upper(): y.upper() for x, y in lista2}
+
+print(d1)
+print(d2)
+print(d3)
