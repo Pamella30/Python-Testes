@@ -1,0 +1,10 @@
+from itertools import count
+indice = count()
+cidades = ['Sao Paulo', 'Salvador', 'Recife', 'Rio de Janeiro']
+estados = ['SP', 'BA', 'PE']
+cidades_estados = zip(indice, estados, cidades)
+
+print(list(cidades_estados))
+for indice, cidades, estados in cidades_estados:
+    print(indice, cidades, estados)
+
