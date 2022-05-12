@@ -1,0 +1,9 @@
+from itertools import combinations, permutations, product
+
+pessoas = ['Pamella', 'Marlene', 'Gildo', 'Patricia', 'Leonardo', 'Beatriz']
+for grupo in product(pessoas, repeat=4):
+    print(grupo)
+
+
+
+
