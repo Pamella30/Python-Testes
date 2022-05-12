@@ -1,0 +1,6 @@
+from itertools import count
+
+contador = count()
+lista = ['Pamella', 'Oliveira', 'da Cruz']
+lista = zip(contador, lista)
+print(list(lista))
