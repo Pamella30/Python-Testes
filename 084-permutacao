@@ -1,0 +1,7 @@
+from itertools import combinations, permutations
+
+pessoas = ['Pamella', 'Marlene', 'Gildo', 'Patricia', 'Leonardo', 'Beatriz']
+for grupo in permutations(pessoas, 3):
+    print(grupo)
+    
+
