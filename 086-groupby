@@ -1,0 +1,22 @@
+from itertools import groupby
+
+alunos = [
+    {'nome': 'Pamella', 'nota': 'A'},
+    {'nome': 'Marlene', 'nota': 'A'},
+    {'nome': 'Beatriz', 'nota': 'B'},
+    {'nome': 'Leonardo', 'nota': 'D'},
+    {'nome': 'Patricia', 'nota': 'C'},
+    {'nome': 'Gildo', 'nota': 'D'}
+]
+
+ordena = lambda item: item['nota']
+alunos.sort(key=ordena)
+agrupados = groupby(alunos, ordena)
+
+for agrupamento, valores in agrupados:
+    print('=' * 40)
+    print(f'Agrupamento {agrupamento}')
+
+    qtd = len(list(valores))
+    print(f'{qtd} pessoa(s) com a nota {agrupamento}')
+
