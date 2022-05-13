@@ -1,0 +1,16 @@
+from dados import produtos, pessoas, lista
+
+
+def aumento(p):
+    p['preco'] = round(p['preco'] * 1.05, 2)
+    return p
+
+
+novo_preco = map(aumento, produtos)
+for produto in novo_preco:
+    print(produto)
+
+
+nome = map(lambda p: p['nome'], pessoas)
+for n in nome:
+    print(n)

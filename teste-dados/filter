@@ -1,0 +1,7 @@
+from dados import produtos, pessoas, lista
+
+nv_lista = filter(lambda p: p['preco'] > 2, produtos)
+for produto in nv_lista:
+    print(produto)
+
+

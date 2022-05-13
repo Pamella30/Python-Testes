@@ -1,0 +1,16 @@
+produtos = [
+    {'Frutas': 'Banana', 'preco': 2.80 },
+    {'Frutas': 'Morango', 'preco': 3.50 },
+    {'Frutas': 'Abacaxi', 'preco': 1.00 },
+    {'Frutas': 'Kiwi', 'preco': 5.20 },
+    {'Frutas': 'Uva', 'preco': 4.50},
+]
+
+pessoas = [
+    {'nome': 'Pamella', 'idade': 32},
+    {'nome': 'Ana', 'idade': 34},
+    {'nome': 'Sofia', 'idade': 22},
+    {'nome': 'Fernanda', 'idade': 44},
+]
+
+lista = [1, 2, 3, 4, 5]
