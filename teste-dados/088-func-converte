@@ -1,0 +1,19 @@
+def converte(valor):
+    try:
+        valor = int(valor)
+        return valor
+    except ValueError:
+        try:
+            valor = float(valor)
+            return valor
+        except ValueError:
+            pass
+
+while True:
+    numero = converte(input('Digite um numero: '))
+    if numero is None:
+        print('Isso nao e um numero.')
+    else:
+        print(f'O numero digitado foi {numero}')
+        break
+print('Programa encerrado')
