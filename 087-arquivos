@@ -1,0 +1,25 @@
+file = open('abc.txt', 'w+')
+file.write('Texto 1\n')
+file.write('Texto 2 \n')
+file.write('Texto 3 \n')
+
+file.seek(0, 0)
+print('Lendo linhas')
+print(file.read())
+print('=' * 20)
+
+file.seek(0, 0)
+print(file.readline(), end='')
+print('=' * 20)
+
+file.seek(0, 0)
+print(file.readlines())
+print('=' * 20)
+
+file.seek(0, 0)
+for linha in file.readlines():
+    print(linha, end='')
+
+file.close()
+
+
