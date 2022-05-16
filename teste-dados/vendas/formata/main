@@ -1,0 +1,9 @@
+from vendas import calc_preco
+from vendas.formata import preco
+
+p = 50.00
+preco_aumento = calc_preco.aumento(p, porcentagem=20, formata=True)
+print(preco_aumento)
+
+preco_reducao = calc_preco.reducao(p, porcentagem=40, formata=True)
+print(preco_reducao)
