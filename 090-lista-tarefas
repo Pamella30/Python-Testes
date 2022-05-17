@@ -1,0 +1,52 @@
+def mostrar(l_afazer):
+    print()
+    print('Tarefas')
+    print(l_afazer)
+    print()
+
+
+def desfazer(l_afazer, l_refazer):
+    if not l_afazer:
+        print('Nada a desfazer.')
+        return
+    ultimo = l_afazer.pop()
+    l_refazer.append(ultimo)
+
+
+def refazer(l_afazer, l_refazer):
+    if not l_refazer:
+        print('Nada a refazer.')
+        return
+    ultimorefazer = l_refazer.pop()
+    l_afazer.append(ultimorefazer)
+
+
+def add(afazer, l_afazer):
+    l_afazer.append(afazer)
+
+
+if __name__ == '__main__':
+    l_afazer = []
+    l_refazer = []
+
+    while True:
+        afazer = input('Mostrar lista\nAdicione tarefa\nDesfazer\nRefazer\nEscolha uma das opcoes acima: ').lower()
+        print('=' * 20)
+
+        if afazer == 'mostrar':
+            mostrar(l_afazer)
+            continue
+
+        elif afazer == 'refazer':
+            refazer(l_afazer, l_refazer)
+            continue
+
+        elif afazer == 'desfazer':
+            desfazer(l_afazer, l_refazer)
+            continue
+
+        add(afazer, l_afazer)
+
+
+
+
