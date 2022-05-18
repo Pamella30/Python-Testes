@@ -1,51 +1,51 @@
-def mostrar(l_afazer):
+def add(tarefa, raiz):
+    raiz.append(tarefa)
+
+
+def mostrar(raiz):
     print()
     print('Tarefas')
-    print(l_afazer)
+    print(raiz)
     print()
 
 
-def desfazer(l_afazer, l_refazer):
-    if not l_afazer:
+def desfazer(raiz, alt):
+    if not raiz:
         print('Nada a desfazer.')
         return
-    ultimo = l_afazer.pop()
-    l_refazer.append(ultimo)
+    des = raiz.pop()
+    alt.append(des)
 
 
-def refazer(l_afazer, l_refazer):
-    if not l_refazer:
+def refazer(raiz, alt):
+    if not alt:
         print('Nada a refazer.')
         return
-    ultimorefazer = l_refazer.pop()
-    l_afazer.append(ultimorefazer)
-
-
-def add(afazer, l_afazer):
-    l_afazer.append(afazer)
+    ref = alt.pop()
+    raiz.append(ref)
 
 
 if __name__ == '__main__':
-    l_afazer = []
-    l_refazer = []
+    raiz = []
+    alt = []
 
     while True:
-        afazer = input('Mostrar lista\nAdicione tarefa\nDesfazer\nRefazer\nEscolha uma das opcoes acima: ').lower()
+        tarefa = input('Adicione tarefa\nMostrar\nDesfazer\nRefazer\nO que deseja fazer: ').lower()
         print('=' * 20)
 
-        if afazer == 'mostrar':
-            mostrar(l_afazer)
+        if tarefa == 'mostrar':
+            mostrar(raiz)
             continue
 
-        elif afazer == 'refazer':
-            refazer(l_afazer, l_refazer)
+        elif tarefa == 'refazer':
+            refazer(raiz, alt)
             continue
 
-        elif afazer == 'desfazer':
-            desfazer(l_afazer, l_refazer)
+        elif tarefa == 'desfazer':
+            desfazer(raiz, alt)
             continue
 
-        add(afazer, l_afazer)
+        add(tarefa, raiz)
 
 
 
