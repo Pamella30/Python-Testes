@@ -1,0 +1,19 @@
+from pessoa import Pessoa
+
+p1 = Pessoa('Pamella', 32)
+p2 = Pessoa('Ana', 34)
+
+
+p1.comer('bolo')
+p1.parou_comer()
+p1.falar('trabalho')
+p1.comer('batata')
+p1.parou_comer()
+p1.falar('serie')
+p1.parou_falar()
+print()
+p2.falar('Comida')
+p2.comer('Queijo')
+p2.parou_falar()
+p2.comer('Pizza')
+
