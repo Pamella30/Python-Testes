@@ -1,4 +1,5 @@
 import re
+import random
 
 REGRESSIVOS = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
 
@@ -55,3 +56,27 @@ def seq(cnpj):
 
 def numeros(cnpj):
     return re.sub(r'[^0-9]', '', cnpj)
+
+
+def gerar():
+    dig1 = random.randint(0, 9)
+    dig2 = random.randint(0, 9)
+    bloco2 = random.randint(100, 999)
+    bloco3 = random.randint(100, 999)
+    bloco4 = '0001'
+
+    monta = f'{dig1}{dig2}{bloco2}{bloco3}{bloco4}00'
+    novo_cnpj = calcula_digito(cnpj=monta, digito=1)
+    novo_cnpj = calcula_digito(cnpj=novo_cnpj, digito=2)
+
+    return novo_cnpj
+
+def formata(cnpj):
+    cnpj = numeros(cnpj)
+    formatado = f'{cnpj[:2]}.{cnpj[2:5]}.{cnpj[5:8]}/{cnpj[8:12]}-{cnpj[12:14]}'
+    return formatado
+    
+
+
+
+
