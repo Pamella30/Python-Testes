@@ -16,4 +16,9 @@ p2.falar('Comida')
 p2.comer('Queijo')
 p2.parou_falar()
 p2.comer('Pizza')
+print()
+print(p1.get_ano_nasc())
+print(p2.get_ano_nasc())
+
+
 
