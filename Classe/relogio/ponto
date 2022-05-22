@@ -1,0 +1,14 @@
+def add(id, staff):
+    staff.append(id)
+    print(staff)
+
+
+staff = []
+
+id = input('Id do funcionario: ')
+
+add(id, staff)
+
+
+
+
