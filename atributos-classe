@@ -1,0 +1,11 @@
+class Teste:
+    var_classe = 123
+
+
+a1 = Teste()
+a2 = Teste()
+
+Teste.var_classe = 'Alterar'
+
+print(a1.var_classe)
+print(a2.var_classe)
