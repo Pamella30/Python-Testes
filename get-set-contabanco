@@ -1,0 +1,124 @@
+class ContaBanco:
+
+    def __init__(self, num_conta, tipo, dono):
+        self.num_conta = num_conta
+        self.tipo = tipo
+        self.dono = dono
+        self.saldo = 0
+        self.estado = False
+
+
+    @property
+    def num_conta(self):
+        return self._num_conta
+
+    @num_conta.setter
+    def num_conta(self, num):
+        self._num_conta = num
+
+    @property
+    def tipo(self):
+        return self._tipo
+
+    @tipo.setter
+    def tipo(self, t):
+        self._tipo = t
+
+    @property
+    def dono(self):
+        return self._dono
+
+    @dono.setter
+    def dono(self, nome):
+        self._dono = nome
+
+    @property
+    def saldo(self):
+        return self._saldo
+
+    @saldo.setter
+    def saldo(self, sal):
+        self._saldo = sal
+
+    @property
+    def estado(self):
+        return self._estado
+
+    @estado.setter
+    def estado(self, estado):
+        self._estado = estado
+
+
+    def abrir_conta(self, t):
+        self._tipo = t
+        self._estado = True
+        if t == 'CC':
+            self.saldo = 50
+        elif t == 'CP':
+            self.saldo = 150
+
+    def fechar_conta(self):
+        if self.saldo > 0:
+             print('Nao foi possivel fechar a conta. Conta com dinheiro!')
+        elif self.saldo < 0:
+            print('Nao foi possivel fechar a conta. Conta em debito!')
+        else:
+            self.estado = False
+
+
+    def depositar(self, valor):
+        if self.estado == True:
+            self.saldo += valor
+        else:
+            print('Impossivel depositar. A conta esta fechada!')
+
+
+    def sacar(self, real):
+        if self.estado == True:
+            if self.saldo > real:
+                self.saldo -= real
+            else:
+                print('Saldo insuficiente')
+        else:
+            print('Impossivel sacar. A conta esta fechada!')
+
+
+    def pag_mensal(self):
+        v = float
+        if self.tipo == 'CC':
+            v = 12
+        elif self.tipo == 'CP':
+            V = 20
+        if self.estado == True:
+            if self.saldo > v:
+                self.saldo -= v
+            else:
+                print('Saldo insuficiente!')
+        else:
+            print('Impossivel pagar. A conta esta fechada!')
+
+
+c1 = ContaBanco(1, 'CC', 'Pamella')
+print(c1.num_conta, c1.dono)
+c1.abrir_conta('CC')
+c1.depositar(1000)
+c1.pag_mensal()
+print(c1.saldo)
+print()
+
+
+
+c2 = ContaBanco(2, 'CP', 'Ana')
+print(c2.dono)
+c2.abrir_conta('CP')
+c2.sacar(20)
+print(c2.saldo)
+print()
+
+c3 = ContaBanco(3,'CC', 'Maria')
+c3.abrir_conta('CP')
+print(c3.estado)
+
+
+
+
