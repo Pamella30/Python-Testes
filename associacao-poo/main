@@ -1,0 +1,21 @@
+from classes import Escritor
+from classes import Caneta
+from classes import Laptop
+
+escritor = Escritor('Sofia')
+print(escritor.nome)
+
+caneta = Caneta('BIC')
+print(caneta.marca)
+
+laptop = Laptop()
+laptop.digitar()
+
+escritor.ferramenta = caneta
+escritor.ferramenta.escrever()
+
+escritor.ferramenta = laptop
+escritor.ferramenta.digitar()
+
+
+
