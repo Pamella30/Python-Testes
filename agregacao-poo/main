@@ -1,0 +1,16 @@
+from classes import Carrinho, Compra
+
+carrinho = Carrinho()
+
+p1 = Compra('Celular', 1000)
+p2 = Compra('Video Game', 500)
+p3 = Compra('Laptop', 700)
+
+carrinho.inserir(p1)
+carrinho.inserir(p2)
+carrinho.inserir(p3)
+carrinho.inserir(p2)
+
+carrinho.lista_produtos()
+print(carrinho.total())
+
