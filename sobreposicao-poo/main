@@ -1,0 +1,14 @@
+from classes import *
+
+c1 = Pessoa('Pamella', 32)
+c1.falar()
+
+vip = ClienteVip('Ana',34)
+vip.falar()
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+        self.nome_classe = self.__class__.__name__
+
+    def falar(self):
+        print(f'{self.nome_classe} esta falando...esta mensagem esta vindo da classe Pessoa')
+
+
+class Cliente(Pessoa):
+    def comprar(self):
+        print(f'{self.nome_classe} esta comprando...')
+
+    def falar(self):
+        print('Falando...esta mensagem esta vindo da classe cliente')
+
+
+class ClienteVip(Cliente):
+    def falar(self):
+        super().falar()
+        Cliente.falar(self)
+        Pessoa.falar(self)
+        print('Falando...esta mensagem esta vindo da classe clientevip')
+        
