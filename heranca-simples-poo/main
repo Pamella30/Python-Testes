@@ -1,0 +1,18 @@
+from classes import *
+
+c1 = Cliente('Pamella', 32)
+print(c1.nome)
+c1.falar()
+c1.comprar()
+print()
+
+c2 = Aluno('Ana', 34)
+print(c2.nome)
+c2.falar()
+c2.estudar()
+
+
+
+
+
+
