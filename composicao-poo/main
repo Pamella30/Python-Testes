@@ -1,0 +1,26 @@
+from classes import Clientes
+
+c1 = Clientes('Pamella', 32)
+c1.entrada_endereco('Sao Paulo', 'SP')
+print(c1.nome)
+c1.lista_endereco()
+del c1
+print()
+
+c2 = Clientes('Ana', 34)
+c2.entrada_endereco('Sao Paulo', 'SP')
+c2.entrada_endereco('Noli', 'SV')
+print(c2.nome)
+c2.lista_endereco()
+del c2
+print()
+
+c3 = Clientes('Jacira', 64)
+c3.entrada_endereco('Parana', 'PR')
+print(c3.nome)
+c3.lista_endereco()
+del c3
+print()
+
+print('=' * 100)
+
