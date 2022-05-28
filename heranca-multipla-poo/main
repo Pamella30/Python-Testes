@@ -1,0 +1,14 @@
+from smartphone import Smartphone
+
+smartphone = Smartphone('Iphone')
+
+smartphone.ligar()
+smartphone.desligar()
+smartphone.conectar()
+smartphone.desligar()
+smartphone.desconectar()
+smartphone.ligar()
+smartphone.desconectar()
+smartphone.conectar()
+smartphone.desconectar()
+smartphone.desligar()
