@@ -1,0 +1,13 @@
+class Erro_error(Exception):
+    pass
+
+
+def teste():
+    raise Erro_error('Errado!')
+
+
+try:
+    teste()
+except Erro_error as error:
+    print(f'{error}')
+    
