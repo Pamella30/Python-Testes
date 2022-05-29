@@ -1,0 +1,17 @@
+from contapoupanca import ContaPoupanca
+from contacorrente import ContaCorrente
+
+print('Conta Poupanca')
+cp = ContaPoupanca(1212, 2222, 0,)
+cp.depositar(1000)
+cp.sacar(5)
+cp.sacar(995)
+cp.sacar(20)
+print()
+
+print('Conta corrente')
+cc = ContaCorrente(agencia=2323, conta=1111, saldo=0, limite=500)
+cc.sacar(500)
+cc.sacar(100)
+cc.depositar(500)
+cc.depositar(40000)
