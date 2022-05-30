@@ -1,0 +1,17 @@
+from contextlib import contextmanager
+
+
+@contextmanager
+def abrir(arquivo, modo):
+    try:
+        print('Abrindo arquivo')
+        arquivo = open(arquivo, modo)
+        yield arquivo
+    finally:
+        print('Fechando o arquivo')
+
+
+with abrir('Texto', 'w') as arquivo:
+    arquivo.write('Teste 1\n')
+    arquivo.write('Teste 2\n')
+    
