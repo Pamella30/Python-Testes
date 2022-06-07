@@ -1,0 +1,38 @@
+from dataclasses import dataclass
+from dataclasses import field
+from dataclasses import asdict, astuple
+
+
+@dataclass()
+class Pessoa:
+    nome: str
+    sobrenome: str = field(repr=False)
+
+
+def __post__init__(self):
+    if not isinstance(self.nome, str):
+        raise TypeError(
+            f'Tipo invalido'
+        )
+
+
+@property
+def nome_completo(self):
+    return f'{self.nome} {self.sobrenome}'
+
+
+p1 = Pessoa('Pamella', 'Oliveira')
+p2 = Pessoa('Ana', 'Viterale')
+p3 = Pessoa('Isabella', 'Oliveira Viterale')
+print(p1)
+
+pessoas = [p1, p2, p3]
+
+print(sorted(pessoas, key=lambda pessoa: pessoa.sobrenome, reverse=True))
+print(p1)
+
+print()
+
+print(asdict(p1))
+print(astuple(p1))
+
